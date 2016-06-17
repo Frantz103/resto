@@ -1,0 +1,111 @@
+ <nav class="navbar navbar-default navbar-inverse">
+ <div class="container-fuild"></div>
+ </nav>
+ <div class="container main">
+        <div class="row">
+          <div class="col-md-8 box">
+           <section class="img-big--box">
+         <div *ngIf="listings_error">An error occurred while loading the Listings!</div>
+          <div>
+         <div *ngFor="let listing of listings | values "> {{ listing.name}}</div>
+ 
+         </div>           
+
+        </section>
+
+           <section>
+            <table>
+            <tr>
+                <th>
+                <a class="btn " href="#">
+                <i class="fa fa-cutlery  fa-4x" aria-hidden="true"></i>
+                </a>
+                </th>
+
+                <td>
+                </td>
+
+                <td>
+                </td>
+            </tr>
+
+              <tr>
+                <th>
+                 <a class="btn " href="#">
+                 <i class="fa fa-shopping-basket  fa-4x" aria-hidden="true"></i>
+                 </a>
+                </th>
+
+                <td>
+                </td>
+
+                <td>
+                </td>
+            </tr>
+
+              <tr>
+                <th>
+                <a class="btn " href="#">
+                <i class="fa fa-usd  fa-4x" aria-hidden="true"></i>
+                </a>
+                </th>
+
+                <td>
+                </td>
+
+                <td>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                 <a class="btn" href="#">
+                <i class="fa fa-circle-o fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-circle-o fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-circle-o fa-2x" aria-hidden="true"></i>
+                </a>
+                </th>
+
+                <td>
+                </td>
+
+                <td>
+                </td>
+            </tr>
+
+
+            </table>
+
+           </section>
+          </div>
+
+          
+          <div class="col-md-3">
+          <div class="sm-green-box"></div>
+          <aside>
+          <div class="categories">
+          <a class="btn color--white " href="#">
+          <i class="fa fa-cutlery  fa-5x" aria-hidden="true"></i>
+          </a>
+          </div>
+
+          <div class="categories">
+           <a class="btn color--white " href="#">
+          <i class="fa fa-shopping-basket  fa-5x" aria-hidden="true"></i>
+          </a>
+          
+          </div>
+
+          <div class="categories margin-bottom--default">
+          <a class="btn color--white " href="#">
+          <i class="fa fa-usd  fa-5x" aria-hidden="true"></i>
+          </a>
+          </div>
+
+          </aside>
+          <div class="sm-green-box "></div>
+         </div>
+
+      </div>
+
+    </div><!-- main container end here -->

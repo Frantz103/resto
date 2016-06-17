@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'restart' ]
+2 info using npm@3.3.12
+3 info using node@v5.4.0
+4 verbose run-script [ 'prerestart',
+4 verbose run-script   'prestop',
+4 verbose run-script   'stop',
+4 verbose run-script   'poststop',
+4 verbose run-script   'restart',
+4 verbose run-script   'prestart',
+4 verbose run-script   'start',
+4 verbose run-script   'poststart',
+4 verbose run-script   'postrestart' ]
+5 info lifecycle resto@1.0.0~prerestart: resto@1.0.0
+6 silly lifecycle resto@1.0.0~prerestart: no script for prerestart, continuing
+7 info lifecycle resto@1.0.0~prestop: resto@1.0.0
+8 silly lifecycle resto@1.0.0~prestop: no script for prestop, continuing
+9 info lifecycle resto@1.0.0~stop: resto@1.0.0
+10 silly lifecycle resto@1.0.0~stop: no script for stop, continuing
+11 info lifecycle resto@1.0.0~poststop: resto@1.0.0
+12 silly lifecycle resto@1.0.0~poststop: no script for poststop, continuing
+13 info lifecycle resto@1.0.0~restart: resto@1.0.0
+14 silly lifecycle resto@1.0.0~restart: no script for restart, continuing
+15 info lifecycle resto@1.0.0~prestart: resto@1.0.0
+16 silly lifecycle resto@1.0.0~prestart: no script for prestart, continuing
+17 info lifecycle resto@1.0.0~start: resto@1.0.0
+18 verbose lifecycle resto@1.0.0~start: unsafe-perm in lifecycle true
+19 verbose lifecycle resto@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/frantzaugustine/Development/resto/node_modules/.bin:/Users/frantzaugustine/.rvm/gems/ruby-2.2.3/bin:/Users/frantzaugustine/.rvm/gems/ruby-2.2.3@global/bin:/Users/frantzaugustine/.rvm/rubies/ruby-2.2.3/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/frantzaugustine/.rvm/bin
+20 verbose lifecycle resto@1.0.0~start: CWD: /Users/frantzaugustine/Development/resto
+21 silly lifecycle resto@1.0.0~start: Args: [ '-c', 'tsc && concurrently "npm run tsc:w" "npm run lite" ' ]
+22 silly lifecycle resto@1.0.0~start: Returned: code: 2  signal: null
+23 info lifecycle resto@1.0.0~start: Failed to exec start script
+24 verbose stack Error: resto@1.0.0 start: `tsc && concurrently "npm run tsc:w" "npm run lite" `
+24 verbose stack Exit status 2
+24 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:232:16)
+24 verbose stack     at emitTwo (events.js:87:13)
+24 verbose stack     at EventEmitter.emit (events.js:172:7)
+24 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+24 verbose stack     at emitTwo (events.js:87:13)
+24 verbose stack     at ChildProcess.emit (events.js:172:7)
+24 verbose stack     at maybeClose (internal/child_process.js:821:16)
+24 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+25 verbose pkgid resto@1.0.0
+26 verbose cwd /Users/frantzaugustine/Development/resto
+27 error Darwin 15.5.0
+28 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "restart"
+29 error node v5.4.0
+30 error npm  v3.3.12
+31 error code ELIFECYCLE
+32 error resto@1.0.0 start: `tsc && concurrently "npm run tsc:w" "npm run lite" `
+32 error Exit status 2
+33 error Failed at the resto@1.0.0 start script 'tsc && concurrently "npm run tsc:w" "npm run lite" '.
+33 error Make sure you have the latest version of node.js and npm installed.
+33 error If you do, this is most likely a problem with the resto package,
+33 error not with npm itself.
+33 error Tell the author that this fails on your system:
+33 error     tsc && concurrently "npm run tsc:w" "npm run lite"
+33 error You can get their info via:
+33 error     npm owner ls resto
+33 error There is likely additional logging output above.
+34 verbose exit [ 1, true ]
